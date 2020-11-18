@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+  
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+
+        background-color: hsl(229, 57%, 11%);
+		font-family: [Raleway](https://fonts.google.com/specimen/Raleway);
+		width: 100%;
+    }
+.bottompic img{
+
+        margin: 150px 0 0 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+#topstuff{
+    background-color: ;
+	position: relative;
+	width: 1000px;
+	top: 250px;
+	left: 250px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	z-index: 2;
+	
+	}
+	
+	.meter { 
+	height: 14px; 
+	position: relative;
+	background: hsl(229, 57%, 11%);
+	border-radius: 25px;
+    	
+}
+.meter > span {
+  display: block;  
+  height: 100%;
+  border-radius: 25px;
+ background: linear-gradient(90deg,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+  position: relative;
+ 
+}
+
+  .storageused {
+       
+	padding: 20px;
+	margin: 30px 10px 10px 40px;	
+	background-color: hsl(228, 56%, 26%);		
+	border-radius: 5%;
+	color: white;
+	width: 400px;
+	height: 80px;
+
+      }
+	  .youve{
+	  font-size: 15px;
+	  font-weight: 10;
+	  }
+		
+   
+	   .left {
+		   width: 120px;
+		   height: auto;
+		   background-color: white;
+		   color: black;
+		   padding: 10px;
+		   position: relative;
+		   bottom: 120px;
+		   left: 250px;
+		   border-radius: 10%;
+		   }
+		   .leftbottom:after{
+		   content: " ";
+		   width: 0;
+		   height: 0;
+		   position: absolute;
+		   border-top: 20px solid white;
+		   border-bottom: 20px solid transparent;
+		   border-left: 20px solid transparent;
+		   border-right: 20px solid white;
+		   left: 100px;
+		   }
+   .fylo{
+  
+   background-color: hsl(228, 56%, 26%);
+   width: 270px;
+   height: 120px;
+   padding: 20px;   
+   border-top-right-radius: 90px;
+   border-top-left-radius:  10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   }
+   .fylo img{
+   padding: 0;
+   }
+   .links{
+   display: flex;
+   padding-top: 10px;
+
+   }
+   
+		.document{
+		background-color:hsl(229, 57%, 11%);
+		padding: 10px;
+		margin: 5px;
+		width: 25px;
+		border-radius: 10%;
+		}
+		.folder{
+		background-color:hsl(229, 57%, 11%);
+		padding: 10px;
+		margin: 5px;
+		width: 25px;
+		border-radius: 10%;
+		}
+		.upload {
+		background-color: hsl(229, 57%, 11%);
+		padding: 10px;
+		margin: 5px;
+		width: 25px;
+		border-radius: 10%;
+		}
+		
+		
+		@media (max-width:375px)
+		{
+		 #topstuff 
+		 {display: flex;
+		 flex-direction: column;
+		 justify-content: center;
+		 width: 100%;
+		 
+		  }
+		 body
+		 {
+		 background-image:url("file:///C:/Users/user/Documents/coding%20shit/fylo-data-storage-component-master/fylo-data-storage-component-master/images/bg-mobile.png");
+		 background-size: 800px, 375px;
+		 background-color: red;
+		 z-index: 3;
+		 width: 100%;
+		 }
+		 .storageused
+		 {
+		 width: 70%;
+		 margin-left: 0px;
+		 }
+		 .fylo
+		 {width: 70%;
+		 }
+		 .left 
+		  {		 
+		  top: 180px;
+		  left: 40px;
+		  }
+		  .leftbottom:after
+		  {
+		  content: " ";
+		  background-color: transparent;
+		  }
+		}
+   
+  </style>
+</head>
+<body>
+
+<nav id="topstuff">
+<section class="storageused">
+ 
+<p class="youve">
+  You’ve used <strong> 815 GB </strong> of your storage 
+  </p>
+
+<div class="meter">
+  <span style="width: 70%"></span>
+</div>
+
+
+
+<div class="left leftbottom"> <strong style="font-size: 30px;"> 185 GB</strong> Left </div>
+  </section>
+  <!--
+  0 GB
+  1000 GB
+  -->
+<section class="fylo">
+
+<img src="C:\Users\user\Documents\coding shit\fylo-data-storage-component-master\fylo-data-storage-component-master\images\logo.svg" 
+alt="fylo logo">
+<nav class="links">
+<div class="document">
+<a href="#" target="_blank"> 
+<img src="C:\Users\user\Documents\coding shit\fylo-data-storage-component-master\fylo-data-storage-component-master\images\icon-document.svg"> 
+</a>
+</div>
+<div class="folder">
+<a href="#" target="_blank">
+<img src="C:\Users\user\Documents\coding shit\fylo-data-storage-component-master\fylo-data-storage-component-master\images\icon-document.svg">
+</a>
+</div>
+<div class="upload">
+<a href="#" target="_blank">
+<img src="C:\Users\user\Documents\coding shit\fylo-data-storage-component-master\fylo-data-storage-component-master\images\icon-upload.svg">
+</a>
+</div>
+</nav>
+</section>
+ </nav>
+<div class="bottompic">
+  <img src="C:\Users\user\Documents\coding shit\fylo-data-storage-component-master\fylo-data-storage-component-master\images\bg-desktop.png"
+  alt = blue picture >
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
